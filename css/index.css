@@ -343,7 +343,7 @@ iframe{
         font-size: small;
         padding: 0;
         position: fixed;
-        top:125px;
+        top:150px;
         background-color: rgba(0, 0, 0);
         width: 87%;
     }
@@ -497,8 +497,8 @@ iframe{
     iframe{
         display: block;
         position: fixed;
-        top: 240px;
-        height: 250px;
+        top: 260px;
+        height: 220px;
         width: 90%;
         visibility: visible;
     }
