@@ -323,14 +323,15 @@ iframe{
     .battery {
         display: flex;
         justify-content: center;
-        align-items: center;margin: 0;
-    }
-
-    #bat{
+        align-items: center;
         margin: 0;
         position:fixed;
         top:0px;
         right:10px;
+    }
+
+    #bat{
+        margin: 0;
     }
     
     .container {
