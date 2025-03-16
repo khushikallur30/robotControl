@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(51, 51, 51, 1);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+}
+.dashboard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ip-bat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.battery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+}
+
+form{
+    margin-bottom: 10px;
+    z-index: 10000;
+}
+
+form input{
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.container{
+    
+    height: 50%;
+    width: 100%;
+    display: flex;
+
+}
+
+.cpu{
+    background-color: rgba(0,0,0,0.5) ;
+    width: 74%;
+    height: 99%;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.data{
+    background-color:  rgba(0,0,0,0.5);
+    width: 97%;
+    height: 99%;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+}
+
+
+
+.si h4, .dl h4{
+    margin-top: 70px;
+    margin-left: 100px;
+    color: #787878;
+}
+
+.si h3, .dl h3{
+    margin-left: 100px;
+}
+.nimg{
+    background-color:  rgba(0,0,0,0.5);
+    height: 99%;
+    width: 70%;
+    margin:5px;
+    border-radius: 20px;
+
+}
+
+
+.arjuna-img{
+    width: 100%;
+}
+.card{
+    display: flex;
+}
+
+.card {
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+.chart-container {
+    width: 100px;
+    height: 75px;
+    font-size: 0.05em;
+}
+
+.controls{
+    padding: 5px;
+    width: 100%;
+    height: 50%;
+    display:flex;
+}
+
+.vid{
+    background-color:  rgba(0,0,0,0.5);
+    width: 30%;
+    height: 99%;
+    margin: 5px;
+    border-radius: 20px;
+
+}
+
+#liveVideo{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#error{
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+.buttons{
+    background-color:  rgba(0,0,0,0.5);
+    width: 40%;
+    height: 99%;
+    margin: 5px;
+    border-radius: 20px;
+    
+}
+
+
+.mac-cont{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    
+}
+
+.mac-cont button{
+    font-size: 1.3em;
+    background-color: #869989;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.cont-edit{
+    padding-left: 0px;
+    padding-top: 50px;
+}
+
+.joystick-container {
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #444;
+    margin-left: 20px;
+}
+.joystick {
+    width: 50px;
+    height: 50px;
+    background: #869989;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.1s ease-out;
+}
+.output {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 170px;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-between;
+}
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="range"] {
+    -webkit-appearance: slider-vertical;
+    appearance: slider-vertical;
+    width: 8px;
+    height: 170px;
+    writing-mode: bt-lr;
+    transform: rotate(0deg);
+}
+.value-display {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.slide-container {
+    display: flex;
+    gap: 50px;
+}
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider {
+    writing-mode: bt-lr; /* Vertical slider */
+    appearance: slider-vertical; /* For some browsers */
+    width: 8px;
+    height: 10px;
+}
+.value-box {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.map{
+    background-color:  rgba(0,0,0,0.5);
+    width: 30%;
+    height: 99%;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/* .cbtn, .dbtn, .mbtn{
+    display: none;
+} */
+
+
+@media (max-width: 600px) {
+
+    .bts{
+        display: flex;
+    }
+
+    .cbtn, .dbtn, .mbtn{
+        border: 50px;
+        position:fixed;
+        top: 0;
+        background-color: aliceblue;
+    }
+
+    .cbtn{
+        right: 75px;
+    }
+
+    .dbtn{
+        right: 20px;
+    }
+
+    .mbtn{
+        right: 155px;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: rgba(51, 51, 51, 1);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    
+    .dashboard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        position: fixed;
+        top:0;
+    }
+    
+    .main-content {
+        padding: 20px;
+        padding-top: 25px;
+        width: 85%;
+    }
+    
+    .ip-bat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        position: fixed;
+        background-color: rgba(0,0,0);
+        padding: 10px;
+        border-radius: 10px;
+        top: 60px;
+        width: 86.5%;
+    }
+    
+    .battery {
+        display: flex;
+        justify-content: center;
+        align-items: center;margin: 0;
+    }
+
+    #bat{
+        margin: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 25%;
+    }
+    
+    .cpu{
+        display: flex;
+        height: 10%;
+        font-size: small;
+        padding: 0;
+        position: fixed;
+        top:150px;
+        background-color: rgba(0, 0, 0);
+        width: 87%;
+    }
+
+    .cpu h3{
+        padding: 0;
+        margin: 0;
+    }
+
+    .cpu, .data, .nimg {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .data{
+        height: 200px;
+        font-size: small;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .data h3, .data h4{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        display: flex;
+        padding: 0;
+    }
+    
+    .card {
+        width: 90%;
+        border-radius: 0;
+        text-align: center;
+        display: block;
+        height: 50px;
+        
+    }
+
+    #cpuChart, #gpuChart, #ramChart{
+        display:none;
+    }
+
+    .chart-container {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        
+    }
+
+    canvas{
+        display: none;
+    }
+    
+    .controls {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 10px;
+        height: fit-content;
+        width: 110%;
+    }
+
+    .buttons{
+        position: fixed;
+        bottom: 0;
+        background-color: rgba(0, 0, 0);
+        height: 30%;
+    }
+    
+    .vid, .buttons, .map {
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .joystick-container {
+        margin: 0 auto;
+    }
+    
+    .mac-cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .slider-container {
+        width: 100%;
+    }
+    
+    .value-box {
+        font-size: 14px;
+    }
+    
+    .chart-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .map{
+        height: 250px;
+        margin: 0;
+    }
+
+    .cam{
+        
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .vid{
+        height: 230px;
+        width: 90%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    #liveVideo {
+        width: auto;
+        border-radius: 10px;
+        height: 200px;
+        justify-content: center;
+    }
+
+    .nimg{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    
+    
+}
+
